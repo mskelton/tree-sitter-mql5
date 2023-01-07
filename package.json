@@ -28,7 +28,7 @@
     {
       "scope": "source.mql5",
       "file-types": [
-        "mql5",
+        "mq5",
         "mqh"
       ],
       "highlights": [

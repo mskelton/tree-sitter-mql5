@@ -25,7 +25,7 @@ jobs:
           git submodule init
           git submodule update
           cd tree-sitter-cpp && git checkout origin/master && cd ..
-          cp tree-sitter-cpp/corpus/* test/corpus
+          cp tree-sitter-cpp/test/corpus/* test/corpus
           npm test
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
