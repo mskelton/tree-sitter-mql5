@@ -3388,24 +3388,33 @@
       "type": "CHOICE",
       "members": [
         {
-          "type": "STRING",
-          "value": "extern"
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "extern"
+            },
+            {
+              "type": "STRING",
+              "value": "static"
+            },
+            {
+              "type": "STRING",
+              "value": "register"
+            },
+            {
+              "type": "STRING",
+              "value": "inline"
+            },
+            {
+              "type": "STRING",
+              "value": "thread_local"
+            }
+          ]
         },
         {
           "type": "STRING",
-          "value": "static"
-        },
-        {
-          "type": "STRING",
-          "value": "register"
-        },
-        {
-          "type": "STRING",
-          "value": "inline"
-        },
-        {
-          "type": "STRING",
-          "value": "thread_local"
+          "value": "input"
         }
       ]
     },

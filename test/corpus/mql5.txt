@@ -1,0 +1,14 @@
+==========================================
+input storage class
+==========================================
+
+int a;
+input int b;
+input double c;
+
+---
+
+(translation_unit
+  (declaration (primitive_type) (identifier))
+  (declaration (storage_class_specifier) (primitive_type) (identifier))
+  (declaration (storage_class_specifier) (primitive_type) (identifier)))
