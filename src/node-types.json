@@ -2743,6 +2743,30 @@
             "named": false
           },
           {
+            "type": "and",
+            "named": false
+          },
+          {
+            "type": "bitand",
+            "named": false
+          },
+          {
+            "type": "bitor",
+            "named": false
+          },
+          {
+            "type": "not_eq",
+            "named": false
+          },
+          {
+            "type": "or",
+            "named": false
+          },
+          {
+            "type": "xor",
+            "named": false
+          },
+          {
             "type": "|",
             "named": false
           },
@@ -3519,7 +3543,7 @@
         "required": true,
         "types": [
           {
-            "type": "identifier",
+            "type": "namespace_identifier",
             "named": true
           }
         ]
@@ -3530,11 +3554,11 @@
       "required": true,
       "types": [
         {
-          "type": "identifier",
+          "type": "namespace_identifier",
           "named": true
         },
         {
-          "type": "qualified_identifier",
+          "type": "nested_namespace_specifier",
           "named": true
         }
       ]
@@ -3559,11 +3583,11 @@
         "required": false,
         "types": [
           {
-            "type": "identifier",
+            "type": "namespace_identifier",
             "named": true
           },
           {
-            "type": "namespace_definition_name",
+            "type": "nested_namespace_specifier",
             "named": true
           }
         ]
@@ -3571,19 +3595,19 @@
     }
   },
   {
-    "type": "namespace_definition_name",
+    "type": "nested_namespace_specifier",
     "named": true,
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
         {
-          "type": "identifier",
+          "type": "namespace_identifier",
           "named": true
         },
         {
-          "type": "namespace_definition_name",
+          "type": "nested_namespace_specifier",
           "named": true
         }
       ]
@@ -5344,6 +5368,10 @@
         },
         {
           "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "friend_declaration",
           "named": true
         },
         {
