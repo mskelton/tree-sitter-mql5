@@ -12,3 +12,34 @@ input double c;
   (declaration (primitive_type) (identifier))
   (declaration (storage_class_specifier) (primitive_type) (identifier))
   (declaration (storage_class_specifier) (primitive_type) (identifier)))
+
+==========================================
+input group directive
+==========================================
+
+input group "=== Trade Settings ==="
+input int InpLots = 1;
+input group "Risk"
+input double InpSL = 0.02;
+
+---
+
+(translation_unit
+  (input_group
+    name: (string_literal
+      (string_content)))
+  (declaration
+    (storage_class_specifier)
+    type: (primitive_type)
+    declarator: (init_declarator
+      declarator: (identifier)
+      value: (number_literal)))
+  (input_group
+    name: (string_literal
+      (string_content)))
+  (declaration
+    (storage_class_specifier)
+    type: (primitive_type)
+    declarator: (init_declarator
+      declarator: (identifier)
+      value: (number_literal))))

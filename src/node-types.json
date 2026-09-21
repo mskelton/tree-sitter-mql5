@@ -3589,6 +3589,22 @@
     }
   },
   {
+    "type": "input_group",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "string_literal",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
     "type": "labeled_statement",
     "named": true,
     "fields": {
@@ -6138,6 +6154,10 @@
           "named": true
         },
         {
+          "type": "input_group",
+          "named": true
+        },
+        {
           "type": "labeled_statement",
           "named": true
         },
@@ -7175,6 +7195,10 @@
   },
   {
     "type": "goto",
+    "named": false
+  },
+  {
+    "type": "group",
     "named": false
   },
   {
