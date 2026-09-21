@@ -1,12 +1,13 @@
 {
   "name": "tree-sitter-mql5",
   "version": "0.1.0",
-  "description": "mql5 grammar for tree-sitter",
+  "description": "MQL4/MQL5 grammar for tree-sitter",
   "repository": "https://github.com/mskelton/tree-sitter-mql5.git",
   "main": "bindings/node",
   "keywords": [
     "tree-sitter",
     "parser",
+    "mql4",
     "mql5"
   ],
   "author": "Mark Skelton",
@@ -29,7 +30,8 @@
       "scope": "source.mql5",
       "file-types": [
         "mq5",
-        "mqh"
+        "mqh",
+        "mq4"
       ],
       "highlights": [
         "queries/highlights.scm",
