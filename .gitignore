@@ -1,3 +1,5 @@
 node_modules/
 build/
 target/
+# Local Pi runtime state
+.atl/
